@@ -11,7 +11,7 @@ import type { RequestHandler } from "express";
 import app from "./app";
 
 const sayWelcome: RequestHandler = (req, res) => {
-  res.status(200).send("Welcome to Wild Series !");
+  res.send("Welcome to Wild Series !");
 };
 
 app.get("/", sayWelcome);
